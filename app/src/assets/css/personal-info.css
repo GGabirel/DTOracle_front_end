@@ -1,0 +1,65 @@
+/*--------------------------------------------------------------
+# Portfolio-accepted
+--------------------------------------------------------------*/
+.portfolio .portfolio-accepted-item {
+    margin-bottom: 30px;
+  }
+.portfolio #portfolio-accepted-filters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+  }
+.portfolio #portfolio-accepted-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+  }
+.portfolio #portfolio-accepted-filters li:hover, .portfolio #portfolio-accepted-filters li.filter-active {
+    color: #fff;
+    background: #3498db;
+  }
+.portfolio #portfolio-accepted-filters li:last-child {
+    margin-right: 0;
+  }
+
+/*--------------------------------------------------------------
+# Portfolio-released
+--------------------------------------------------------------*/
+.portfolio .portfolio-released-item {
+    margin-bottom: 30px;
+  }
+.portfolio #portfolio-released-filters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+  }
+.portfolio #portfolio-released-filters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+  }
+.portfolio #portfolio-released-filters li:hover, .portfolio #portfolio-released-filters li.filter-active {
+    color: #fff;
+    background: #3498db;
+  }
+.portfolio #portfolio-released-filters li:last-child {
+    margin-right: 0;
+  }

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - Vesperr Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--alert-->
+  <link href="assets/css/alert-animate.min.css" rel="stylesheet" >
+  <link href="assets/css/syalert.min.css" rel="stylesheet">
+  
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Vesperr - v4.7.0
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <h1><a href="./login-home.html">DTOracle</a></h1>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="./login-home.html">首页</a></li>
+          <li><a class="nav-link scrollto active" href="./login-home.html#portfolio">项目广场</a></li>
+          <li class="dropdown"><a href="./personal-info.html"><span>用户中心</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./personal-info.html">个人信息</a></li>
+              <li class="dropdown"><a href="./personal-info.html#portfolio-accepted"><span>项目情况</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="./personal-info.html#portfolio-accepted">购买者信息</a></li>
+                  <li><a href="./personal-info.html#portfolio-released">发布者信息</a></li>
+                </ul>
+              </li>
+              <li><a href="./index.html">注销登录</a></li>
+            </ul>
+          </li>
+          <li><a class="getstarted scrollto" href="./login-home.html#services">开始项目</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Oracle服务提交</h2>
+          <ol>
+            <li><a href="./login-home.html">首页</a></li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>航班详细信息</h3>
+              <ul>
+                <li><strong>航班号</strong>: CA3434T</li>
+                <li><strong>始发地</strong>: 成都双流</li>
+                <li><strong>目的地</strong>: 北京</li>
+                <li><strong>航站楼</strong>: T2</li>
+                <li><strong>计划起飞</strong>: 05:30</li>
+                <li><strong>计划到达</strong>: 07:30</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            
+            <!--触发报名事件-->
+            <p>
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="syalert.syopen('alert-pre')">结果预提交</button>
+              <button type="button" class="btn btn-success btn-lg btn-block" onclick="syalert.syopen('alert-formal')">结果正式提交</button>
+            </p>
+          </div>
+
+          
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- 预报名确认弹窗 -->
+        <div class="sy-alert sy-alert-model animated" sy-enter="zoomIn" sy-leave="zoomOut" sy-type="confirm" sy-mask="true" id="alert-pre">
+          <div class="sy-title">提交提示</div>
+          <div class="sy-content">
+            <div class="form">
+              <p><strong>请输入结果</strong>：</p>
+              <p class="input-item"><input type="text" placeholder=""></p>
+            </div>
+            <div class="form">
+              <p><strong>请输入您的提交凭证</strong>：</p>
+              <p class="input-item"><input type="number" placeholder=""></p>
+            </div>
+            
+          </div> 
+          <div class="sy-btn">
+            <button onclick="syalert.syhide('alert-pre')">取消</button>
+            <a href="index2.html"><button>确定</button></a>
+          </div> 
+        </div>
+        <script>
+          function ok(id){
+            syalert.syhide(id);
+          }
+        </script>
+
+        <div class="sy-alert sy-alert-model animated" sy-enter="zoomIn" sy-leave="zoomOut" sy-type="confirm" sy-mask="true" id="alert-pre-success">
+          <div class="sy-title">提交成功</div>
+          <div class="sy-btn">
+            <button onclick="syalert.syhide('alert-pre-success')">取消</button>
+            <a href="index2.html"><button>确定</button></a>
+          </div> 
+        </div> 
+
+
+        <!-- 正式报名确认弹窗 -->
+        <div class="sy-alert sy-alert-model animated" sy-enter="zoomIn" sy-leave="zoomOut" sy-type="confirm" sy-mask="true" id="alert-formal">
+          <div class="sy-title">提交提示</div>
+          <div class="sy-content">
+            <div class="form">
+              <p><strong>请输入结果</strong>：</p>
+              <p class="input-item"><input type="text" placeholder=""></p>
+            </div>
+            <div class="form">
+              <p><strong>请输入您的提交凭证</strong>：</p>
+              <p class="input-item"><input type="number" placeholder=""></p>
+            </div>
+          </div> 
+          <div class="sy-btn">
+            <button onclick="syalert.syhide('alert-formal')">取消</button>
+            <button onclick="syalert.syopen('alert-formal-success')">确定</button>
+          </div> 
+        </div>
+        <script>
+          function ok(id){
+            syalert.syhide(id);	
+          }
+        </script>
+
+        <div class="sy-alert sy-alert-model animated" sy-enter="zoomIn" sy-leave="zoomOut" sy-type="confirm" sy-mask="true" id="alert-formal-success">
+          <div class="sy-title">提交成功</div>
+          <div class="sy-btn">
+            <button onclick="syalert.syhide('alert-formal-success')">取消</button>
+            <button onclick="ok('alert-formal'); ok('alert-formal-success')">确定</button>
+          </div> 
+        </div> 
+
+
+      </div>
+    </section> <!--End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Vesperr</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            
+            <a href="./login-home.html" class="scrollto">Home</a>
+            <a href="./login-home.html#about" class="scrollto">introduction</a>
+          </nav>
+        </div>
+        
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!--alert-->
+  <script src="assets/js/jquery-1.10.2.js"></script>
+  <script src="assets/js/syalert.min.js"></script>
+
+</body>
+
+</html>
